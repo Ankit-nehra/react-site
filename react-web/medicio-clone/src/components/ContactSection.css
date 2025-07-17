@@ -1,0 +1,109 @@
+.contact {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-title {
+  font-size: 2rem;
+  color: #2c4964;
+  margin-bottom: 20px;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Contact Info */
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  text-align: left;
+  color: #444;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1;
+  min-width: 250px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  width: 100%;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #1977cc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #125fa4;
+}
+
+/* Map Container */
+.map-container {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* --- Responsive Breakpoint --- */
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .map-container {
+    height: 250px;
+  }
+}
